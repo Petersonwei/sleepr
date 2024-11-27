@@ -4,7 +4,7 @@ import { Logger, NotFoundException } from "@nestjs/common";
 
 // This is a base class that handles common database operations
 // Other repository classes can inherit from this to get basic database functionality
-export abstract class AbstractRepositroy <TDocument extends AbstractDocument> {
+export abstract class AbstractRepository <TDocument extends AbstractDocument> {
     // Each child class needs to have its own logger for error tracking
     protected abstract readonly logger: Logger;
 
